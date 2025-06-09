@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- fontawsome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- media query -->
+ 
+    <style>
+  /* Small screens (phones) */
+  @media (max-width: 640px) {
+    body {
+      font-size: 15px;
+    }
+
+    header .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-text {
+      padding: 0 10px;
+    }
+
+    .grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  /* Medium screens */
+  @media (min-width: 641px) and (max-width: 1023px) {
+    .grid-cols-4 {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+  }
+</style>
+
+
+
+</head>
+
+<body class="bg-white">
+
+  <!-- Header -->
+  <header class="bg-black shadow">
+    <div class="container mx-auto px-10 py-5 flex justify-between items-center">
+      <h1 class="text-white text-xl font-bold">Portfolio</h1>
+      <nav>
+        <ul class="text-white flex space-x-10">
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-16 px-16 bg-gray-300">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-20 px-4">
+
+      <!-- Image -->
+      <img src="./pic.png" alt="#" class="w-40 h-50" />
+
+      <!-- Text -->
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-blue-600">Muhsina P M</span></h2>
+        <p class="text-xl">MERN Stack intern, Building full stack web development.</p>
+        <div class="mt-6">
+          <a href="./Muhsina P M CV.pdf" download
+            class="inline-block bg-black hover:bg-blue-800 text-blue-600 hover:text-white font-semibold py-2 px-6 rounded-lg shadow">Download
+            CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about" class="py-16 px-10 container mx-auto">
+    <h2 class="text-3xl font-bold mb-5 px-5">About Me</h2>
+    <p class="max-w-2xl px-5">
+      I'm a passionate and dedicated aspiring front-end developer, currently learning the fundamentals of web
+      development. I have hands-on experience with HTML, CSS, Bootstrap, and Tailwind CSS. As a fresher, I'm eager to
+      grow my skills, build responsive and user-friendly websites, and contribute to real-world projects. I'm always
+      curious to learn new technologies and improve my coding abilities one step at a time.
+    </p>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-white px-6 md:px-20 ">
+    <div class="container">
+      <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 text-center">
+
+        <!-- HTML -->
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-12 mx-auto"
+            alt="HTML" />
+          <p class="mt-2">HTML</p>
+        </div>
+
+        <!-- CSS -->
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-12 mx-auto"
+            alt="CSS" />
+          <p class="mt-2">CSS</p>
+        </div>
+
+        <!-- Bootstrap -->
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            class="h-12 mx-auto" alt="Bootstrap" />
+          <p class="mt-2">Bootstrap</p>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div>
+          <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" class="h-12 mx-auto"
+            alt="Tailwind CSS" />
+          <p class="mt-2">Tailwind CSS</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+
+  <section id="projects" class="py-16 px-6 ">
+    <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Chocolate Website Project -->
+      <div class="bg-white p-6 container mx-auto border-2 border-black rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Chocolate Website</h3>
+        <p>This is my first web project built using only HTML. It’s a simple, static website that showcases different
+          types of chocolates with basic structure and layout. It helped me understand HTML tags and page structure.</p>
+        <a href="https://www.linkedin.com/posts/muhsina-pm_webdevelopment-html-activity-7326525060049965056-9Zg9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFpC6sEBpB-G3mqqNewQQJZdYGxF2HBrSig"
+          class="text-blue-500 underline mt-2 inline-block">View Live</a>
+      </div>
+
+      <!-- Event Management Website -->
+      <div class="bg-white p-6 container mx-auto border-2 border-black rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Event Management Website</h3>
+        <p>This is a static website built using HTML and CSS. It includes sections like services, event packages,
+          gallery, and contact. Through this project, I learned about page styling, layout using Flexbox, and responsive
+          design basics.</p>
+        <a href="https://www.linkedin.com/posts/muhsina-pm_html-css-fullstackdevelopment-activity-7329048925896695809-2es3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFpC6sEBpB-G3mqqNewQQJZdYGxF2HBrSig"
+          class="text-blue-500 underline mt-2 inline-block">View Live</a>
+      </div>
+
+      <!-- E-commerce Cosmetic Website -->
+      <div class="bg-white p-6 container mx-auto border-2 border-black rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">E-commerce Cosmetic Website</h3>
+        <p>This is a fully responsive e-commerce website built using HTML, CSS, and Bootstrap. It showcases cosmetic
+          products with a modern layout, navigation bar, product cards, and responsive grid system. This project helped
+          me understand Bootstrap components and how to build real-world interfaces.</p>
+        <a href="https://www.linkedin.com/posts/muhsina-pm_html-css-fullstackdevelopment-activity-7329048925896695809-2es3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFpC6sEBpB-G3mqqNewQQJZdYGxF2HBrSig"
+          class="text-blue-500 underline mt-2 inline-block">View Live</a>
+      </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 py-10 text-center">
+    <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+    <div class="flex justify-center gap-6 text-3xl mb-6">
+      <a href="https://www.linkedin.com/in/muhsina-pm/" target="_blank" class="hover:text-blue-900"
+        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Muhsina-P-M" target="_blank" class="hover:text-blue-900" aria-label="GitHub"><i
+          class="fab fa-github"></i></a>
+      <a href="https://vercel.com/muhsina-p-ms-projects" target="_blank" class="hover:text-blue-900"
+        aria-label="Vercel"><i class="fas fa-globe"></i></a>
+    </div>
+    <p>Email: <a href="pmmhome78@gmail.com" class="text-blue-600 hover:underline">pmmhome78@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    &copy; 2025 Muhsina P M Portfolio Design 2025 | MERN Stack Intern
+  </footer>
+
+</body>
+
+</html>
